@@ -46,7 +46,7 @@ void sel_e(int cost[V][V])
     }
 
     key[0] = 0;  // встановлює значення вершини, як 0
-    parent[0] = -1; // First node is always root of MST  
+    parent[0] = -1;
 
     for (int x = 0; x < V - 1; x++)
     {
