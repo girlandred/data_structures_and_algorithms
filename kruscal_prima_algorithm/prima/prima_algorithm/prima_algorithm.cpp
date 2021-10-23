@@ -21,7 +21,7 @@ int min_e(int key[], bool visited[])
 }
 
 /* функція, що відповідає за виведення фінального графа */
-int print(int parent[], int cost[V][V])
+void print(int parent[], int cost[V][V])
 {
     int minCost = 0;
     cout << "Edge \tWeight\n";
@@ -46,7 +46,7 @@ void sel_e(int cost[V][V])
     }
 
     key[0] = 0;  // встановлює значення вершини, як 0
-    parent[0] = -1; // First node is always root of MST  
+    parent[0] = -1;
 
     for (int x = 0; x < V - 1; x++)
     {

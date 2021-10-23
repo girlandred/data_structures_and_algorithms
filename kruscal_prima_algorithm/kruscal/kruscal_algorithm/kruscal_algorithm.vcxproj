@@ -139,7 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="dsu.cpp" />
     <ClCompile Include="kruscal_algorithm.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dsu.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
