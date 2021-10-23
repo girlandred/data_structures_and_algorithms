@@ -21,7 +21,7 @@ int min_e(int key[], bool visited[])
 }
 
 /* функція, що відповідає за виведення фінального графа */
-int print_MST(int parent[], int cost[V][V])
+int print(int parent[], int cost[V][V])
 {
     int minCost = 0;
     cout << "Edge \tWeight\n";
@@ -67,7 +67,7 @@ void sel_e(int cost[V][V])
     }
 
     // виведення фінального каркасу
-    print_MST(parent, cost);
+    print(parent, cost);
 }
 
 int main()
